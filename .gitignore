@@ -400,6 +400,6 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Secrets
-./discord.py/.env
+.env
 
 DS_Store

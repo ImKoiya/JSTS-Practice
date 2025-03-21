@@ -4,9 +4,7 @@ from discord import app_commands
 from discord.ext import commands
 from datetime import datetime
 
-milky_way = discord.Object(id=1000861726759190528)
-development_server = discord.Object(id=1312229548091379774)
-server = milky_way
+server = discord.Object(1352389107778846831)
 
 @app_commands.guilds(server)
 class member(commands.GroupCog, group_name='member'):

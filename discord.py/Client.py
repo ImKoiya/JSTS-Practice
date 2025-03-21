@@ -8,20 +8,11 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
-flaire_token = os.getenv("flaire-token")
-testing_token = os.getenv("test-token")
-developing = True
-milky_way = discord.Object(id=1000861726759190528)
-development_server = discord.Object(id=1312229548091379774)
-server = milky_way
-token = str(flaire_token)
+server = discord.Object(1352389107778846831)
+token = os.getenv("token")
 cogs = []
 
-intents = discord.Intents.default()
-intents.voice_states = True
-intents.message_content = True
-intents.members = True
-intents.guilds = True
+intents = discord.Intents.all()
 
 client = commands.Bot(command_prefix="F-", intents=intents)
 client.remove_command('help')
